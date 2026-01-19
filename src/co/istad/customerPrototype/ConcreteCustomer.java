@@ -5,7 +5,7 @@ import lombok.Data;
 import java.time.LocalDate;
 
 @Data
-public class CustomerImp implements Customer {
+public class ConcreteCustomer implements Customer {
     private Integer id;
     private String name;
     private Integer age;
@@ -27,7 +27,7 @@ public class CustomerImp implements Customer {
     private LocalDate register;
     private Boolean status;
 
-    public CustomerImp(Integer id, String name, Integer age, String gender, LocalDate dob, Double height, Double weight, String language, String job, String position, String address, Integer contact, String email, Boolean membership, Integer purchase, Integer point, String rank, Integer discount, LocalDate register, Boolean status) {
+    public ConcreteCustomer(Integer id, String name, Integer age, String gender, LocalDate dob, Double height, Double weight, String language, String job, String position, String address, Integer contact, String email, Boolean membership, Integer purchase, Integer point, String rank, Integer discount, LocalDate register, Boolean status) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -52,7 +52,7 @@ public class CustomerImp implements Customer {
 
     @Override
     public Customer clone() {
-        return new CustomerImp(id, name, age, gender, dob, height, weight, language, job, position, address, contact, email, membership, purchase, point, rank, discount, register, status);
+        return new ConcreteCustomer(id, name, age, gender, dob, height, weight, language, job, position, address, contact, email, membership, purchase, point, rank, discount, register, status);
     }
 
     @Override

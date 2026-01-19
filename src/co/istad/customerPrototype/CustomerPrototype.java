@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class CustomerPrototype {
     static void main() {
-        CustomerImp customerImp1 = new CustomerImp(
+        ConcreteCustomer concreteCustomer1 = new ConcreteCustomer(
                 01,
                 "LP",
                 20,
@@ -28,31 +28,31 @@ public class CustomerPrototype {
 
         );
 
-        CustomerImp customerImp2 = (CustomerImp) customerImp1.clone();
-        customerImp2.setId(02);
-        customerImp2.setRank("Silver");
-        customerImp2.setStatus(false);
+        ConcreteCustomer concreteCustomer2 = (ConcreteCustomer) concreteCustomer1.clone();
+        concreteCustomer2.setId(02);
+        concreteCustomer2.setRank("Silver");
+        concreteCustomer2.setStatus(false);
 
-        CustomerImp customerImp3 = (CustomerImp) customerImp2.clone();
-        customerImp3.setId(03);
-        customerImp3.setName("Tohka");
-        customerImp3.setHeight(1.70);
+        ConcreteCustomer concreteCustomer3 = (ConcreteCustomer) concreteCustomer2.clone();
+        concreteCustomer3.setId(03);
+        concreteCustomer3.setName("Tohka");
+        concreteCustomer3.setHeight(1.70);
 
-        CustomerImp customerImp4 = (CustomerImp) customerImp1.clone();
-        customerImp4.setId(04);
-        customerImp4.setContact(782396421);
-        customerImp4.setEmail("happytime@gmail.com");
+        ConcreteCustomer concreteCustomer4 = (ConcreteCustomer) concreteCustomer1.clone();
+        concreteCustomer4.setId(04);
+        concreteCustomer4.setContact(782396421);
+        concreteCustomer4.setEmail("happytime@gmail.com");
 
-        CustomerImp customerImp5 = (CustomerImp) customerImp4.clone();
-        customerImp5.setId(05);
-        customerImp5.setJob("Teacher");
-        customerImp5.setPosition("PE");
+        ConcreteCustomer concreteCustomer5 = (ConcreteCustomer) concreteCustomer4.clone();
+        concreteCustomer5.setId(05);
+        concreteCustomer5.setJob("Teacher");
+        concreteCustomer5.setPosition("PE");
 
 
-        System.out.println(customerImp1);
-        System.out.println(customerImp2);
-        System.out.println(customerImp3);
-        System.out.println(customerImp4);
-        System.out.println(customerImp5);
+        System.out.println(concreteCustomer1);
+        System.out.println(concreteCustomer2);
+        System.out.println(concreteCustomer3);
+        System.out.println(concreteCustomer4);
+        System.out.println(concreteCustomer5);
     }
 }
