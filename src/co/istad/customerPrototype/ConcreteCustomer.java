@@ -57,6 +57,27 @@ public class ConcreteCustomer implements Customer {
 
     @Override
     public String toString() {
-        return "Customer{" + "id=" + id + ", name='" + name + '\'' + ", gender='" + gender + '\'' + ", location='" + address + '\'' + ", contact=" + contact + ", email='" + email + '\'' + ", membership=" + membership + ", rank='" + rank + '\'' + ", point=" + point + ", register=" + register + '}';
+        return "ConcreteCustomer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", gender='" + gender + '\'' +
+                ", dob=" + dob +
+                ", height=" + height +
+                ", weight=" + weight +
+                ", language='" + language + '\'' +
+                ", job='" + job + '\'' +
+                ", position='" + position + '\'' +
+                ", address='" + address + '\'' +
+                ", contact=" + contact +
+                ", email='" + email + '\'' +
+                ", membership=" + membership +
+                ", purchase=" + purchase +
+                ", point=" + point +
+                ", rank='" + rank + '\'' +
+                ", discount=" + discount +
+                ", register=" + register +
+                ", status=" + status +
+                '}';
     }
 }
